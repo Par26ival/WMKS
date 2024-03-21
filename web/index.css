@@ -35,7 +35,7 @@ body {
 
 @keyframes fadeInUp {
     0% {
-        transform: translateY(-30px);
+        transform: translateY(-60px);
         filter: contrast(.7) brightness(.9);
     }
 
