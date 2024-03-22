@@ -7,6 +7,8 @@ body {
     background-color: #222222;
 }
 
+/*  */
+
 .animation-container {
     position: fixed;
     top: 50%;
@@ -35,7 +37,7 @@ body {
 
 @keyframes fadeInUp {
     0% {
-        transform: translateY(-60px);
+        transform: translateY(-150px);
         filter: contrast(.7) brightness(.9);
     }
 
@@ -62,7 +64,6 @@ body {
     display: block;
 }
 
-
 @keyframes fadeInUp2 {
     0% {
         transform: translateY(-120px);
@@ -72,5 +73,61 @@ body {
     100% {
         transform: none;
         filter: none;
+    }
+}
+
+/* Filter */
+
+#filter-options {
+    display: none;
+    z-index: -1100;
+}
+
+#filter-options.opened {
+    z-index: 10;
+}
+
+#filter-options.block {
+    display: block;
+    z-index: 1000;
+}
+
+#filter-button {
+    position: absolute;
+    top: 29.7%;
+    left: 80%;
+    font-size: 18px;
+    padding: 12px 24px;
+    color: #fff !important;
+    background-color: rgb(24, 23, 23);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.filter-option {
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+}
+
+#op1,
+#op2,
+#op3 {
+    top: 40%;
+    left: 81%;
+    z-index: -1;
+}
+
+.slide-animation {
+    animation: slideToLeft 0.5s ease-in-out forwards;
+}
+
+@keyframes slideToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
     }
 }
