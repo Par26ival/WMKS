@@ -21,8 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
           if (tower.mail.toLowerCase() === emailInput) {
             found = true;
             if (tower.pass === passwordInput) {
-              console.log("Login successful.");
-              alert("Login successful! Redirecting to the system...");
               window.location.href = "home.html";
             } else {
               console.log("Incorrect password.");
