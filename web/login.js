@@ -10,9 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
           .toLowerCase();
         const passwordInput = document.getElementById("pass").value;
 
-        console.log("Email input:", emailInput);
-        console.log("Password input:", passwordInput);
-
         const towerKeys = Object.keys(data);
         let found = false;
 
