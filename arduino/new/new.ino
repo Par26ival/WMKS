@@ -14,6 +14,6 @@ void loop() {
     detectionCount++; // Increment the detection count
     Serial.print("Detection count: "); // Print the detection count label
     Serial.println(detectionCount); // Print the current detection count
-    delay(500); // Delay to avoid counting multiple detections for a single motion
+    delay(20); // Delay to avoid counting multiple detections for a single motion
   }
 }
