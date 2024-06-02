@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
     <title>Trespassing System</title>
 </head>
-
 <body>
     <div class="animation-container">
         <p id="animation-text">Hello, Kosio!</p>
@@ -21,8 +19,52 @@
             <button class="filter-option" id="op3">Most Recent</button>
         </div>
     </div>
-    <div class="notifications"></div>
+    <div class="notifications">
+        <div class="notif">
+            <p>A sensor reading has been made</p>
+            <div class="time-date-container">
+                <span id="time">12:00 PM (EEST)</span>
+                <span id="date">2024-01-06</span>
+            </div>
+            <span id="d">An object has been detected</span>
+            <br>
+            <button id="vdet">View Details</button>
+            <button id="del">Delete</button>
+        </div>
+        <div class="notif">
+            <p>A sensor reading has been made</p>
+            <div class="time-date-container">
+                <span id="time">04:01 AM (EEST)</span>
+                <span id="date">2024-31-05</span>
+            </div>
+            <span id="d">An object has been detected</span>
+            <br>
+            <button id="vdet">View Details</button>
+            <button id="del">Delete</button>
+        </div>
+        <div class="notif">
+            <p>A sensor reading has been made</p>
+            <div class="time-date-container">
+                <span id="time">08:59 AM (EEST)</span>
+                <span id="date">2024-29-05</span>
+            </div>
+            <span id="d">An object has been detected</span>
+            <br>
+            <button id="vdet">View Details</button>
+            <button id="del">Delete</button>
+        </div>
+        <!-- <div class="notif">
+            <p>A sensor reading has been made</p>
+            <div class="time-date-container">
+                <span id="time">09:41 PM (EEST)</span>
+                <span id="date">2024-13-05</span>
+            </div>
+            <span id="d">An object has been detected</span>
+            <br>
+            <button id="vdet">View Details</button>
+            <button id="del">Delete</button>
+        </div> -->
+    </div>
     <script src="txt.js"></script>
 </body>
-
 </html>
