@@ -137,7 +137,7 @@ body {
     }
 }
 
- /* notif container box */
+/* notif container box */
 
 .notifications {
     position: fixed;
@@ -146,6 +146,14 @@ body {
     transform: translate(-50%, -50%);
     color: white;
     margin-top: 5em;
+}
+
+.notifications.hidden {
+    display: none;
+}
+
+.notifications.visible {
+    display: block;
 }
 
 .notif {
@@ -174,7 +182,8 @@ body {
     margin-top: 14px;
 }
 
-#time, #date {
+#time,
+#date {
     display: block;
 }
 
@@ -216,4 +225,20 @@ body {
 
 #del:active {
     opacity: 0.7;
+}
+
+@keyframes fadeInUp3 {
+    0% {
+        transform: translateY(-820px);
+        filter: contrast(.7) brightness(.9);
+    }
+
+    100% {
+        transform: none;
+        filter: none;
+    }
+}
+
+.notif {
+    animation: fadeInUp3 2s ease-in-out forwards;
 }
